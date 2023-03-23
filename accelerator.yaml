@@ -1,0 +1,16 @@
+accelerator:
+  displayName: Sample In-Database Analytics Pipeline Accelerator using Argo Workflows
+  description: Sample Project template for deploying an in-database ML Pipeline
+  iconUrl: https://upload.wikimedia.org/wikipedia/commons/1/1b/ML_Ops_Venn_Diagram.svg
+  tags:
+  - "ML"
+  - "AI"
+  - "machinelearning"
+  - "datascience"
+  - "MLOps"
+  - "artificialintelligence"
+  - "python"
+  - "pipeline"
+  - "argo"
+  - "database"
+  - "analytics"
