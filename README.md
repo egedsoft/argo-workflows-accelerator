@@ -16,4 +16,26 @@ tanzu plugin install --local <path-to-tanzu-cli> all
 tanzu acc create argo-pipelines-acc --git-repository https://github.com/agapebondservant/argo-workflows-accelerator.git --git-branch main
 ```
 
+## Integrate with TAP
+
+* Deploy the app (on TAP):
+```
+tanzu apps workload create argoworkflows-tap -f resources/tapworkloads/workload.yaml --yes
+```
+
+* Tail the logs of the main app:
+```
+tanzu apps workload tail argoworkflows-tap --since 64h
+```
+
+* Once deployment succeeds, get the URL for the main app:
+```
+tanzu apps workload get argoworkflows-tap     #should yield datahub.default.<your-domain>
+```
+
+* To delete the app:
+```
+tanzu apps workload delete argoworkflows-tap --yes
+```
+
 ### (TODO: Pipeline documentation)
